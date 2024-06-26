@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phootprise - Your Ultimate E-Commerce Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="/Phootprise/Build/Src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <br>
+            <br>
+            <div class="logo">Phootprise</div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="navigation" id="navigation">
+                <button class="close-btn" id="closeNavBtn">&times;</button>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="#Login" class="btn-login">Login</a>
+                    <a href="#Register" class="btn-register">Register</a>
+                </div>
+                <div class="cart-icon">
+                    <a href="#Cart" aria-label="icon">
+                        <i class="fas fa-shopping-cart"> Your Cart <br><span class="cart-count"><br> 0</span></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    
+
+<!-- Product Categories Navigation -->
+<div class="product-categories">
+    <button class="category-toggle" id="categoryToggle">Categories</button>
+    <ul class="categories-list" id="categoriesList">
+        <li><a href="#Electronics">Electronics</a></li>
+        <li><a href="#Books">MacBook Air</a></li>
+        <li><a href="#Clothing">Laptop</a></li>
+        <li><a href="#HomeKitchen">Samsung Galaxy S20</a></li>
+        <li><a href="#Sports">Watch</a></li>
+        <li><a href="#Toys">iPad</a></li>
+        <li><a href="#Beauty">EarPods</a></li>
+        <li><a href="#Automotive">Help</a></li>
+    </ul>
+</div>
+
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search products...">
+        <button class="search-button"><i class="fas fa-search"></i> Search</button>
+    </div>
+
+    <section class="slider">
+        <div class="carousel">
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/YAelMA_kTyi9IfUVwU09zA" alt="Slider Image 1">
+            </div>
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/image/lossless/response/1ixqVeTlQpmKc6etRtCxfA" alt="Slider Image 2">
+            </div>
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/image/lossless/response/KHeXhZayS2GCTSVn6Fayfw" alt="Slider Image 3">
+            </div>
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/4MIAireWSzG5frMT9XTrJA" alt="Slider Image 4">
+            </div>
+        </div>
+    
+        <!-- Navigation Buttons -->
+        <button id="prevBtn" class="control-btn prev-btn">&#10094;</button>
+        <button id="nextBtn" class="control-btn next-btn">&#10095;</button>
+    
+        <!-- Slide Indicators -->
+        <div class="slide-indicators">
+            <span class="indicator" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+        </div>
+    </section>
+
+    <div class="iphone" id="iphone" style="background-color:black;">
+        <div class="container">
+            <h2>iPhone</h2>
+            <div class="video-feature-container">
+                <div class="video-frame">
+                    <video id="videoPlayer" src="/Phootprise/Build/assets/Video/18 things from WWDC24 _ Apple.mp4" controls autoplay loop></video>
+                    <!-- <div class="controls">
+                        <button class="control-button" id="playPauseBtn">Play</button>
+                        <button class="control-button" id="muteBtn">Mute</button>
+                        <button class="control-button" id="fullscreenBtn">Fullscreen</button>
+                    </div> -->
+                </div>
+                <div class="features">
+                    <h3>iPhone 15 Features</h3>
+                    <ul>
+                        <li>Super Retina XDR Display</li>
+                        <li>A15 Bionic Chip</li>
+                        <li>Advanced Dual-Camera System</li>
+                        <li>5G Speed</li>
+                        <li>Longer Battery Life</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+    
+    <div class="container">
+        <section class="section">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products">
+                <!-- Product Cards -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1708367688034" alt="MacBook Air">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">MacBook Air</div>
+                        <div class="product-price">$999</div>
+                        <div class="product-description">The latest MacBook Air with M1 chip.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71xHNSCyRsL._AC_UL480_FMwebp_QL65_.jpg" alt="Laptop">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Laptop</div>
+                        <div class="product-price">$799</div>
+                        <div class="product-description">Powerful and versatile laptop for work and play.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/81vDZyJQ-4L._AC_UY327_FMwebp_QL65_.jpg" alt="Samsung S20">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Samsung Galaxy S20</div>
+                        <div class="product-price">$699</div>
+                        <div class="product-description">Advanced features for mobile enthusiasts.</div>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61IMRs+o0iL._AC_UL480_FMwebp_QL65_.jpg" alt="Watch">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Watch</div>
+                        <div class="product-price">$299</div>
+                        <div class="product-description">Elegant and smart watches for every occasion.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61uA2UVnYWL._AC_UY327_FMwebp_QL65_.jpg" alt="iPad">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">iPad</div>
+                        <div class="product-price">$499</div>
+                        <div class="product-description">The ultimate portable tablet for productivity.</div>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/51raakZN9fL._AC_UY327_FMwebp_QL65_.jpg" alt="EarPods">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">EarPods</div>
+                        <div class="product-price">$199</div>
+                        <div class="product-description">High-quality audio for immersive listening.</div>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71xHNSCyRsL._AC_UL480_FMwebp_QL65_.jpg" alt="Laptop">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Laptop</div>
+                        <div class="product-price">$799</div>
+                        <div class="product-description">Powerful and versatile laptop for work and play.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/81vDZyJQ-4L._AC_UY327_FMwebp_QL65_.jpg" alt="Samsung S20">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Samsung Galaxy S20</div>
+                        <div class="product-price">$699</div>
+                        <div class="product-description">Advanced features for mobile enthusiasts.</div>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61IMRs+o0iL._AC_UL480_FMwebp_QL65_.jpg" alt="Watch">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Watch</div>
+                        <div class="product-price">$299</div>
+                        <div class="product-description">Elegant and smart watches for every occasion.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71xHNSCyRsL._AC_UL480_FMwebp_QL65_.jpg" alt="Laptop">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Laptop</div>
+                        <div class="product-price">$799</div>
+                        <div class="product-description">Powerful and versatile laptop for work and play.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/81vDZyJQ-4L._AC_UY327_FMwebp_QL65_.jpg" alt="Samsung S20">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Samsung Galaxy S20</div>
+                        <div class="product-price">$699</div>
+                        <div class="product-description">Advanced features for mobile enthusiasts.</div>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61IMRs+o0iL._AC_UL480_FMwebp_QL65_.jpg" alt="Watch">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Watch</div>
+                        <div class="product-price">$299</div>
+                        <div class="product-description">Elegant and smart watches for every occasion.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71xHNSCyRsL._AC_UL480_FMwebp_QL65_.jpg" alt="Laptop">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Laptop</div>
+                        <div class="product-price">$799</div>
+                        <div class="product-description">Powerful and versatile laptop for work and play.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/81vDZyJQ-4L._AC_UY327_FMwebp_QL65_.jpg" alt="Samsung S20">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Samsung Galaxy S20</div>
+                        <div class="product-price">$699</div>
+                        <div class="product-description">Advanced features for mobile enthusiasts.</div>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61IMRs+o0iL._AC_UL480_FMwebp_QL65_.jpg" alt="Watch">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Watch</div>
+                        <div class="product-price">$299</div>
+                        <div class="product-description">Elegant and smart watches for every occasion.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71xHNSCyRsL._AC_UL480_FMwebp_QL65_.jpg" alt="Laptop">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Laptop</div>
+                        <div class="product-price">$799</div>
+                        <div class="product-description">Powerful and versatile laptop for work and play.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/81vDZyJQ-4L._AC_UY327_FMwebp_QL65_.jpg" alt="Samsung S20">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Samsung Galaxy S20</div>
+                        <div class="product-price">$699</div>
+                        <div class="product-description">Advanced features for mobile enthusiasts.</div>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61IMRs+o0iL._AC_UL480_FMwebp_QL65_.jpg" alt="Watch">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Watch</div>
+                        <div class="product-price">$299</div>
+                        <div class="product-description">Elegant and smart watches for every occasion.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71xHNSCyRsL._AC_UL480_FMwebp_QL65_.jpg" alt="Laptop">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Laptop</div>
+                        <div class="product-price">$799</div>
+                        <div class="product-description">Powerful and versatile laptop for work and play.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/81vDZyJQ-4L._AC_UY327_FMwebp_QL65_.jpg" alt="Samsung S20">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Samsung Galaxy S20</div>
+                        <div class="product-price">$699</div>
+                        <div class="product-description">Advanced features for mobile enthusiasts.</div>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61IMRs+o0iL._AC_UL480_FMwebp_QL65_.jpg" alt="Watch">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Watch</div>
+                        <div class="product-price">$299</div>
+                        <div class="product-description">Elegant and smart watches for every occasion.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71xHNSCyRsL._AC_UL480_FMwebp_QL65_.jpg" alt="Laptop">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Laptop</div>
+                        <div class="product-price">$799</div>
+                        <div class="product-description">Powerful and versatile laptop for work and play.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/81vDZyJQ-4L._AC_UY327_FMwebp_QL65_.jpg" alt="Samsung S20">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Samsung Galaxy S20</div>
+                        <div class="product-price">$699</div>
+                        <div class="product-description">Advanced features for mobile enthusiasts.</div>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61IMRs+o0iL._AC_UL480_FMwebp_QL65_.jpg" alt="Watch">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">Watch</div>
+                        <div class="product-price">$299</div>
+                        <div class="product-description">Elegant and smart watches for every occasion.</div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="#" class="cta-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>Get to Know Us</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press Releases</a></li>
+                            <li><a href="#">Amazon Cares</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Connect with Us</h3>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Make Money with Us</h3>
+                        <ul>
+                            <li><a href="#">Sell on Amazon</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                            <li><a href="#">Advertise Your Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Let Us Help You</h3>
+                        <ul>
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">Returns Centre</a></li>
+                            <li><a href="#">100% Purchase Protection</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
